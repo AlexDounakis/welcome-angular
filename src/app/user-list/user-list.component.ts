@@ -11,4 +11,10 @@ import { UserComponent } from '../user/user.component';
 })
 export class UserListComponent {
 
+  unames: string[] = ['Anna', 'Nik', 'Maria', 'George', 'Kate'];
+
+
+  constructor(){ }
+
+
 }

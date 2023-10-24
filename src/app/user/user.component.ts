@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -10,7 +10,18 @@ import { CommonModule } from '@angular/common';
 })
 export class UserComponent {
 
-  uname = 'Nik';
+  // uname // error
+  // uname = 'Nik';
+  // uname: any;
+  @Input() uname :string = 'Maria';
+
+  // uname:string;
+
+  // constructor(){
+  //   this.uname = 'Anna';
+  //   let aVariable = 10;
+  // }
+
 
 
 }

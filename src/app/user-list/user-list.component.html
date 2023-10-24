@@ -3,5 +3,27 @@
 <!-- <ul>
     <li>Ann</li>
     <li>Bill</li>
-</ul> -->
-<app-user></app-user>
+</ul>
+
+{{ unames }}
+<br>
+{{ unames | json }}
+<br>
+
+<ul>
+    <li *ngFor="let u of unames">{{ u }}</li>
+</ul>
+
+
+<ul>
+    <li *ngFor="let u of unames">
+        <app-user uname="{{ u }}" />
+    </li>
+</ul>
+
+
+
+<app-user uname="{{ u }}" *ngFor="let u of unames" /> -->
+
+
+<app-user [uname]="u" *ngFor="let u of unames" />
